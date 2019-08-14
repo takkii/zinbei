@@ -1,0 +1,9 @@
+image: centos:centos7
+stages:
+    - run_script
+
+example_run_script:
+    stage: run_script
+    script: bundle exec rspec
+    only:
+        - master
