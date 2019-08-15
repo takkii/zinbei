@@ -1,5 +1,6 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
+# bundle exec
 require 'rubygems'
 require 'bundler'
 begin
@@ -9,20 +10,9 @@ rescue Bundler::BundlerError => e
   $stderr.puts "Run `bundle install` to install missing gems"
   exit e.status_code
 end
+
+# rspec
 require 'rake'
-
-require 'jeweler'
-Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "zinbei"
-  gem.homepage = "http://www.nyasocom.site/takkii/zinbei"
-  gem.license = "MIT"
-  gem.email = "karuma.reason@gmail.com"
-  gem.authors = ["takkii"]
-  # dependencies defined in Gemfile
-end
-Jeweler::RubygemsDotOrgTasks.new
-
 require 'rspec/core'
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec) do |spec|
@@ -41,8 +31,26 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "zinbei #{version}"
+  rdoc.title = "zinbeijett #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
-  rdoc.options = ["--charset", "utf-8", "--line-numbers"] # <------ 追加
+  rdoc.options = ["--charset", "utf-8", "--line-numbers"]
+end
+
+# unit_test
+require 'rake/testtask'
+
+task :default => [:test]
+Rake::TestTask.new do |test|
+  test.test_files = Dir['test/**/test_*.rb']
+  test.verbose = true
+end
+
+# mini_test
+require 'rake/testtask'
+
+task :default => [:test]
+Rake::TestTask.new do |mini_test|
+  mini_test.test_files = Dir['mini_test/**/mini_test_*.rb']
+  mini_test.verbose = true
 end
