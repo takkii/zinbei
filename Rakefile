@@ -3,6 +3,12 @@
 # bundle exec
 require 'rubygems'
 require 'bundler'
+require 'rake'
+require 'rspec/core'
+require 'rspec/core/rake_task'
+require 'rdoc/task'
+require 'rake/testtask'
+
 begin
   Bundler.setup(:default, :development)
 rescue Bundler::BundlerError => e
@@ -12,9 +18,7 @@ rescue Bundler::BundlerError => e
 end
 
 # rspec
-require 'rake'
-require 'rspec/core'
-require 'rspec/core/rake_task'
+
 RSpec::Core::RakeTask.new(:spec) do |spec|
   spec.pattern = FileList['spec/**/*_spec.rb']
 end
@@ -26,10 +30,8 @@ end
 
 task :default => :spec
 
-require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
-
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title = "zinbeijett #{version}"
   rdoc.rdoc_files.include('README*')
@@ -38,7 +40,6 @@ Rake::RDocTask.new do |rdoc|
 end
 
 # unit_test
-require 'rake/testtask'
 
 task :default => [:test]
 Rake::TestTask.new do |test|
@@ -47,7 +48,6 @@ Rake::TestTask.new do |test|
 end
 
 # mini_test
-require 'rake/testtask'
 
 task :default => [:test]
 Rake::TestTask.new do |mini_test|
