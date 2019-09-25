@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
   s.executables = %w(zinbei zinbeiw)
   s.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   s.homepage = "http://rubyist.hatenablog.com/"
+  s.metadata = { "github_repo" => "ssh://github.com/takkii/zinbei" }
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "3.0.3"
@@ -21,5 +22,5 @@ Gem::Specification.new do |s|
   s.description = "zinbei is rubyshell(zinbei,zinbeiw), It's evolution every day."
   if s.respond_to? :specification_version then
     s.specification_version = 4
-end
+  end
 end
