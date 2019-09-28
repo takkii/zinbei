@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  ))wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww((
 ((                                                                    ))
@@ -16,13 +17,11 @@
 
 ## zinbeiの取り扱い説明書
 
-zinbeiの-zオプションは開始から全文表示まで出力にかけてます。
-
-rantanは指定する単語を、全文検索して表示します。
+zinbeiはオプションで検索内容が変わります。
 
 zinbeiwは日本語を使ってirbのように入力待ちにてシンプルな機能を備えたシェルです
 
-savaは置換機能であり、指定する単語をテキスト内で全て置き換えてくれます。
+※ 詳しくは、開始またはヘルプページを参照してください。
 
 (空のファイルを指定して書き出す形が良いと想います。)
 
@@ -38,21 +37,11 @@ RubyGemsからインストールできるバージョン。
 
 ＜:ロミ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There is a function which indicates a character string respectively in zinbei.
+The search contents of zinbei are optional.
 
-Rantan is simple search shell, evolution every days.
+zinbeiw is a shell with simple functions that uses Japanese and waits for input like irb.
 
-In waiting for input like irb zinbeiw is a shell with the simple function.
-
-sava is new shell.permute input word all change.
-
-If Ruby is used, when it's included in a PC of holdings, it may be convenient.
-
-After multi-platform-ization is being advanced by the present version.
-
-I should move by most environment.
-
-Before using, please agree to a license and use it.
+* For details, refer to the start page or the help page.
 
 ＜:ロミ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
