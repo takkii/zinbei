@@ -5,6 +5,8 @@ require 'minitest'
 require 'minitest/autorun'
 require 'minitest/unit'
 require 'minitest/reporters'
+# use Test Case comment out
+# require 'tanraku'
 
 Encoding.default_internal = 'UTF-8'
 
