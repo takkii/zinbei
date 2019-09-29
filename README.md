@@ -18,8 +18,6 @@
 
 [![Gem Version](https://badge.fury.io/rb/zinbei.svg)](http://badge.fury.io/rb/zinbei)[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)[![Build Status](https://travis-ci.org/takkii/zinbei.svg?branch=master)](https://travis-ci.org/takkii/zinbei)![GitHub release](https://img.shields.io/github/release/takkii/zinbei.svg?style=flat)
 
-## zinbeiの取り扱い説明書
-
 zinbeiはオプションで検索内容が変わります。
 
 zinbeiwは日本語を使ってirbのように入力待ちにてシンプルな機能を備えたシェルです
