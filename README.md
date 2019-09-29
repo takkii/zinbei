@@ -107,6 +107,14 @@ Finished in 0.008685 seconds.
 
 ```
 
+```text
+zinbeiの現在は、MITライセンスです。
+
+著作者はTakayuki Kamiyamaです。
+```
+
+```markdown
 zinbei just version is MIT license.
 
 Author Takayuki Kamiyama.
+```
