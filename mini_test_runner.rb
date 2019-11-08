@@ -26,8 +26,8 @@ class MiniFilename
   end
 end
 
-# Top Level class super class mix-in.
-module Load 
+# refinement use module
+module Load
   refine MiniFilename do
     def done
       mini_find
@@ -35,6 +35,7 @@ module Load
   end
 end
 
+# refinement use module
 module LoadR
   refine MiniTestOne do
     def ddone
