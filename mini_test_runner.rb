@@ -11,9 +11,7 @@ require 'minitest/reporters'
 Encoding.default_internal = 'UTF-8'
 
 # Ruby test file.
-module MiniTestOne
-  module_function
-
+class MiniTestOne
   def mini_test
     Dir[File.join(__dir__, 'mini_test', '*.rb')].each do |file|
       require file
@@ -29,11 +27,19 @@ class MiniFilename
 end
 
 # Top Level class super class mix-in.
-class Load < MiniFilename
-  include MiniTestOne
+module Load 
+  refine MiniFilename do
+    def done
+      mini_find
+    end
+  end
+end
 
-  def done
-    mini_test
+module LoadR
+  refine MiniTestOne do
+    def ddone
+      mini_test
+    end
   end
 end
 
@@ -47,10 +53,13 @@ puts ''
 puts ''
 puts ' mini_test in filename list...start '.center(60, '-').toutf8
 puts ''
-Load.new.mini_find
+using Load
+MiniFilename.new.mini_find
 puts ''
 puts ' mini_test in filename list...exit '.center(60, '-').toutf8
 puts ''
-Load.new.done
+using LoadR
+MiniTestOne.new.mini_test
+puts ''
 
 __END__
