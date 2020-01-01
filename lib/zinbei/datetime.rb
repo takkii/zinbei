@@ -10,6 +10,8 @@ puts t.strftime('%Y”N%mŒŽ%d“ú %HŽž%M•ª%S•b')
 t = Time.new
 x = Time.mktime(t.year, t.month, t.day)
 y = Time.mktime(t.year + 1, 1, 1)
+
+# 1years 365 days.
 print '—ˆ”N‚Ì1ŒŽ1“ú‚Ü‚Å‚ ‚Æ: '
 print (((y - x) / 60 / 60 / 24)-1).round
 puts ' “ú‚Å‚·'
