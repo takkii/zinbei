@@ -11,7 +11,7 @@ t = Time.new
 x = Time.mktime(t.year, t.month, t.day)
 y = Time.mktime(t.year + 1, 1, 1)
 print '—ˆ”N‚Ì1Œ1“ú‚Ü‚Å‚ ‚Æ: '
-print ((y - x) / 60 / 60 / 24).round
+print (((y - x) / 60 / 60 / 24)-1).round
 puts ' “ú‚Å‚·'
 
 # ------------------------------
@@ -35,4 +35,4 @@ nen = %w(—ß˜a)
 # end
 
 #2020/1/1ˆÈ~
-puts (nen[0] + "#{(td.year - 2018)}”N"+"#{td.month}Œ"+"#{td.day-1}“ú") +" "+t.to_date.jisx0301
+puts (nen[0] + "#{(td.year - 2018)}”N"+"#{td.month}Œ"+"#{td.day}“ú") +" "+t.to_date.jisx0301
