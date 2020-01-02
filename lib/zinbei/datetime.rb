@@ -3,7 +3,44 @@
 
 require 'himekuri'
 
+<<<<<<< HEAD
 Object.new.himekuri
 Object.new.count
 Object.new.reiwa
 Object.new.version
+=======
+print '‚ğ•\¦:'
+t = Time.new # ¡“ú‚Ì“ú•t‚Æ
+puts t.strftime('%Y”N%mŒ%d“ú %H%M•ª%S•b')
+t = Time.new
+x = Time.mktime(t.year, t.month, t.day)
+y = Time.mktime(t.year + 1, 1, 1)
+
+# 1years 365 days.
+print '—ˆ”N‚Ì1Œ1“ú‚Ü‚Å‚ ‚Æ: '
+print (((y - x) / 60 / 60 / 24)-1).round
+puts ' “ú‚Å‚·'
+
+# ------------------------------
+
+# ------------------------------
+td = Date.today
+
+# —ß˜a2”N–ÚˆÈ~
+nen = %w(—ß˜a)
+
+# •½¬‚©‚ç—ß˜a‚Ìn‚Ü‚è
+# nen = ['•½¬', '—ß˜a']
+# ------------------------------
+
+# 2019/5/1ˆÈ~
+# if ("#{td.year}".to_s+"#{td.month}".to_s).match?(/^20201$/)
+# if "#{td.year}" + "#{td.month}" =~ /^20201$/
+#  puts (nen[1] + "#{(td.year - 2018)}”N"+"#{td.month}Œ"+"#{td.day}“ú") +" "+t.to_date.jisx0301
+# else
+#  puts (nen[1] + "#{(td.year - 2018)}”N".gsub(/[1]/,"Œ³")+"#{td.month}Œ"+"#{td.day}“ú") +" "+t.to_date.jisx0301
+# end
+
+#2020/1/1ˆÈ~
+puts (nen[0] + "#{(td.year - 2018)}”N"+"#{td.month}Œ"+"#{td.day}“ú") +" "+t.to_date.jisx0301
+>>>>>>> 4eb1f790a55c97307e277d9b4517ec3451c79b55
