@@ -36,6 +36,8 @@ RubyGemsからインストールできるバージョン。
 
 > zinbei -d
 
+[himekuri/rubygems](https://rubygems.org/gems/himekuri)
+
 ＜:ロミ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The search contents of zinbei are optional.
