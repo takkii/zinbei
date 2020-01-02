@@ -1,9 +1,14 @@
 # coding: sjis
 # frozen_string_literal: true
 
-require 'date'
-require 'time'
+require 'himekuri'
 
+<<<<<<< HEAD
+Object.new.himekuri
+Object.new.count
+Object.new.reiwa
+Object.new.version
+=======
 print '時刻を表示:'
 t = Time.new # 今日の日付と時刻
 puts t.strftime('%Y年%m月%d日 %H時%M分%S秒')
@@ -38,3 +43,4 @@ nen = %w(令和)
 
 #2020/1/1以降
 puts (nen[0] + "#{(td.year - 2018)}年"+"#{td.month}月"+"#{td.day}日") +" "+t.to_date.jisx0301
+>>>>>>> 4eb1f790a55c97307e277d9b4517ec3451c79b55
