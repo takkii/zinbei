@@ -5,9 +5,10 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in zinbei.gemspec
 # gemspec
 
-ruby '2.6.5'
+ruby '2.7.0'
 
 gem 'debase'
+gem 'himekuri'
 gem 'minitest'
 gem 'minitest-reporters'
 gem 'rake'
