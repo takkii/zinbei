@@ -173,7 +173,7 @@ Metrics/ParameterLists:
 # Offense count: 18
 # Configuration parameters: MinNameLength, AllowNamesEndingInNumbers, AllowedNames, ForbiddenNames.
 # AllowedNames: io, id, to, by, on, in, at, ip, db
-Naming/UncommunicativeMethodParamName:
+Naming/MethodParamName:
   Exclude:
     - 'bin/zinbeiw'
 
