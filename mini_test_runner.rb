@@ -5,6 +5,7 @@ require 'minitest'
 require 'minitest/autorun'
 require 'minitest/unit'
 require 'minitest/reporters'
+require 'himekuri'
 # use Test Case comment out
 # require 'tanraku'
 
@@ -44,6 +45,14 @@ module LoadR
   end
 end
 
+puts ''
+puts ' TimeStamp '.center(60, '-').toutf8
+puts ''
+Object.new.reiwa_print
+puts ''
+Object.new.himekuri_print
+puts ''
+puts ' TimeStamp '.center(60, '-').toutf8
 puts ''
 puts ' current_directory '.center(60, '-').toutf8
 puts ''

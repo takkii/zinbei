@@ -2,6 +2,7 @@
 
 require 'kconv'
 require 'test/unit'
+require 'himekuri'
 
 Encoding.default_internal = 'UTF-8'
 
@@ -30,6 +31,14 @@ class Unit < Filename
   end
 end
 
+puts ''
+puts ' TimeStamp '.center(60, '-').toutf8
+puts ''
+Object.new.reiwa_print
+puts ''
+Object.new.himekuri_print
+puts ''
+puts ' TimeStamp '.center(60, '-').toutf8
 puts ''
 puts ' ./test in filename list...start! '.center(60, '-').toutf8
 puts ''
