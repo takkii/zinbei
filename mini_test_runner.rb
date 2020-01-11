@@ -6,8 +6,6 @@ require 'minitest/autorun'
 require 'minitest/unit'
 require 'minitest/reporters'
 require 'himekuri'
-# use Test Case comment out
-# require 'tanraku'
 
 Encoding.default_internal = 'UTF-8'
 
