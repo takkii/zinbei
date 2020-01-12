@@ -28,11 +28,17 @@ RubyGemsからインストールできるバージョン。
 
 [ News ]
 
-> zinbeiのdオプション、1.5.xからはhimekuriを使います
+```markdown
 
-> gem install himekuri
+1.5.xからはhimekuriを使います
 
-> zinbei -d
+gem install himekuri
+
+zinbei -d
+
+```
+
+RubyGems /himekuri
 
 [himekuri/rubygems](https://rubygems.org/gems/himekuri)
 
