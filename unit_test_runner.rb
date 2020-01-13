@@ -34,9 +34,9 @@ end
 puts ''
 puts ' TimeStamp '.center(60, '-').toutf8
 puts ''
-Object.new.reiwa_print
+Unit.new.reiwa_print
 puts ''
-Object.new.himekuri_print
+Unit.new.himekuri_print
 puts ''
 puts ' TimeStamp '.center(60, '-').toutf8
 puts ''
