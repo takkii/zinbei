@@ -38,9 +38,9 @@ zinbei -d
 
 ```
 
-RubyGems /himekuri
+RubyGems himekuri downloads page.
 
-[himekuri/rubygems](https://rubygems.org/gems/himekuri)
+[ himekuri ](https://rubygems.org/gems/himekuri)
 
 ＜:ロミ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
