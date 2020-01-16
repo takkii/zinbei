@@ -40,7 +40,7 @@ zinbei -d
 
 RubyGems himekuri downloads page.
 
-[ himekuri ](https://rubygems.org/gems/himekuri)
+[ gem install himekuri ](https://rubygems.org/gems/himekuri)
 
 ＜:ロミ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
