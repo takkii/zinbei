@@ -120,7 +120,7 @@ Finished in 0.008685 seconds.
 ```text
 zinbeiの現在は、MITライセンスです。
 
-著作者はTakayuki Kamiyamaです。
+著作者は、上山 孝幸です。
 ```
 
 英語
