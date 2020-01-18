@@ -217,9 +217,12 @@ module Zinbei
   def rantan
     require 'zinbei/rantan'
   end
-
   def golan
-    require 'zinbei/timestamp'
+    begin
+      exec("../exe/kaminarigumo.exe")
+    rescue Exception => e
+      puts e.backtrace
+    end
   end
 end
 
