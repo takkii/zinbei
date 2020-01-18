@@ -38,6 +38,20 @@ zinbei -d
 
 ```
 
+[GuuGoo](https://github.com/takkii/guugoo)
+
+```markdown
+
+git clone https://github.com/takkii/zinbei.git
+
+cd zinbei
+
+zinbei -g
+
+※ GuuGooで作成した実行ファイルが動作します。
+
+```
+
 RubyGems himekuri downloads page.
 
 [ gem install himekuri ](https://rubygems.org/gems/himekuri)
