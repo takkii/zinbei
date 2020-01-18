@@ -219,7 +219,7 @@ module Zinbei
   end
   def golan
     begin
-      exec("../exe/kaminarigumo.exe")
+      exec("./exe/kaminarigumo.exe")
     rescue Exception => e
       puts e.backtrace
     end
