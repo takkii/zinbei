@@ -5,7 +5,7 @@ Encoding.default_internal = 'UTF-8'
 class Golan
 	def exefile
 		begin
-			exec("kaminarigumo.exe")
+			exec("./kaminarigumo.exe")
 		rescue Exception => e
 			puts e.backtrace
 		end
