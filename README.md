@@ -46,9 +46,15 @@ git clone https://github.com/takkii/zinbei.git
 
 cd zinbei
 
+or
+
+rubygems install ( gem install zinbei )
+
+cd RubyInstaller2展開先(windows)/lib/ruby/gems/2.6.0/gems/zinbei-1.5.1
+
 zinbei -g
 
-※ GuuGooで作成した実行ファイルが動作します。
+※ GuuGooで作成した実行ファイル(.exe)が動作します。
 
 ```
 
