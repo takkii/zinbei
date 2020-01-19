@@ -77,7 +77,7 @@ module Zinbei
     puts '
     The MIT License
 
-    Copyright (c) 2016 ~ 2019 Takayuki Kamiyama
+    Copyright (c) 2016 ~ 2020 Takayuki Kamiyama
 
     Permission is hereby granted, free of charge,
     to any person obtaining a copy of this software and
@@ -123,11 +123,11 @@ module Zinbei
 
     [Example]
 
-    $zinbei -n notojima.txt
-    $zinbei -m notojima.txt
-    $zinbei -u notojima.txt
-    $zinbei -o notojima.txt
-    $zinbei -z notojima.txt
+    $ zinbei -n notojima.txt
+    $ zinbei -m notojima.txt
+    $ zinbei -u notojima.txt
+    $ zinbei -o notojima.txt
+    $ zinbei -z notojima.txt
 
     -n                 The number line checked end load file.
 
@@ -147,26 +147,37 @@ module Zinbei
 
     < how to use >
 
-    zinbei -r [ File name ] [ String or regular expression ]
+    > zinbei -r [ File name ] [ String or regular expression ]
 
     < Example >
 
-    >zinbei -r notojima.txt wajima
+    > zinbei -r notojima.txt wajima
 
     If it evaluates whether there is any character string of wajima
     to notojima.txt and is in it, one of them will be outputted!
 
     < how to use>
 
-    zinbei -t [Filename (read)] [Filename (write)] [change before word] [change after word]
+    > zinbei -t [Filename (read)] [Filename (write)] [change before word] [change after word]
 
-    <Example>
+    < Example >
 
-    >zinbei -t notojima.txt Example.txt roman ruby
+    > zinbei -t notojima.txt Example.txt roman ruby
 
     Example.txt new_make_file after roman → ruby changed.
 
+    < Example >
+
+    > zinbei -g
+
+    RubyShell call is Golang build exe.
+
+    > zinbei -f
+
+    RubyShell call is Golang build exe.
+
     '
+
     puts 'COMMAND'.center(60, '-')
   end
 

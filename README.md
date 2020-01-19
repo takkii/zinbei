@@ -54,6 +54,10 @@ cd RubyInstaller2展開先(windows)/lib/ruby/gems/2.6.0/gems/zinbei-1.5.1
 
 zinbei -g
 
+or
+
+zinbei -f
+
 ※ GuuGooで作成した実行ファイル(.exe)が動作します。
 
 ```
