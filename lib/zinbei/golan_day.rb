@@ -1,5 +1,5 @@
 begin
-  exec("./exe/poisionspider.exe")
+  exec("./exe/poisonspider.exe")
 rescue Exception => ex
   puts ex.backtrace
 end
