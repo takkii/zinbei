@@ -42,6 +42,8 @@ zinbei -d
 
 ```markdown
 
+> Ruby 2.6.5
+
 git clone https://github.com/takkii/zinbei.git
 
 cd zinbei
