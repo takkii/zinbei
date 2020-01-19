@@ -220,12 +220,10 @@ module Zinbei
 
   def golan_puts
     require 'zinbei/golan_puts'
-    golang_puts.new.dream
   end
 
   def golan_day
     require 'zinbei/golan_day'
-    golan_day.new.hope
   end
 end
 
@@ -293,7 +291,7 @@ elsif one.match?(t)
   scom
 elsif one.match?(g)
   golan_puts
-elsif one.match?(g)
+elsif one.match?(f)
   golan_day
 else
   puts 'Please choose an option.'
