@@ -217,12 +217,15 @@ module Zinbei
   def rantan
     require 'zinbei/rantan'
   end
-  def golan
-    begin
-      exec("./exe/kaminarigumo.exe")
-    rescue Exception => e
-      puts e.backtrace
-    end
+
+  def golan_puts
+    require 'zinbei/golan_puts'
+    golang_puts.new.dream
+  end
+
+  def golan_day
+    require 'zinbei/golan_day'
+    golan_day.new.hope
   end
 end
 
@@ -244,6 +247,7 @@ z = /\A[-][z]\z/
 r = /\A[-][r]\z/
 t = /\A[-][t]\z/
 g = /\A[-][g]\z/
+f = /\A[-][f]\z/
 
 one = ARGV[0]
 
@@ -288,7 +292,9 @@ elsif one.match?(r)
 elsif one.match?(t)
   scom
 elsif one.match?(g)
-  golan
+  golan_puts
+elsif one.match?(g)
+  golan_day
 else
   puts 'Please choose an option.'
 end
