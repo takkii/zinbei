@@ -13,58 +13,11 @@ module Zinbei
   module_function
 
   def version
-    require 'zinbei/version'
-    print Zinbei::VERSION
-    puts ' : [zinbei_mania_version] '
+    require 'zinbei/serial'
   end
 
   def start
-    puts '
-
-    == Contributing to zinbei
-
-    ** Fixed **
-    The number of files was reduced.
-
-    Remind zinbei option
-    * add -v,version
-    * add -d,datetime
-    * add -h,help
-    * add -s,start
-
-    New zinbei option
-    **How to use**
-    [zinbei -m notojima.txt]
-    * add -m
-    * add -n
-    * add -o
-    * add -u
-
-    sava and rantan is zinbei(rubyshell).
-    support hakoirimusume project.
-
-    Please remember
-    this command by zinbeiw
-    * delete * find * remove *exit
-    * rename * makefolder * wordcount
-    * NumberGame *Numbers *loto6 *Encode
-    * OneRunner *Eval * week
-
-    ** Try **
-    zinbeiw
-    >help
-    >exit
-
-    ----Please enter the following words------
-    |   in the command prompt for windows    |
-    |                                        |
-    |              zinbei help               |
-    |                                        |
-    ------------------------------------------
-    wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-        Thank you for reading to the last.
-    wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-    '
+    require 'zinbei/page'
   end
 
   def datetime
@@ -72,122 +25,15 @@ module Zinbei
   end
 
   def license
-    puts 'LICENSE'.center(60, '-')
-
-    puts '
-    The MIT License
-
-    Copyright (c) 2016 ~ 2019 Takayuki Kamiyama
-
-    Permission is hereby granted, free of charge,
-    to any person obtaining a copy of this software and
-    associated documentation files (the [Software]),
-    to deal in the Software without restriction,
-    including without limitation the rights to use, copy, modify,
-    merge, publish, distribute, sublicense,
-    and/or sell copies of the Software,
-    and to permit persons to whom the Software is furnished to do so,
-    subject to the following conditions:
-
-    The above copyright notice and
-    this permission notice shall be included
-    in all copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED [AS IS],
-    WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
-    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-    IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-    DAMAGES OR OTHER LIABILITY,
-    WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
-    OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-    '
-    puts 'LICENSE'.center(60, '-')
+    require 'zinbei/license'
   end
 
   def command
-    puts 'COMMAND'.center(60, '-')
-
-    puts '
-    [Zinbei]
-
-    -s,start           Start Pages.
-
-    -v,version         Version Infomation
-
-    -d,datetime        What time is it?
-
-    -l,license         License Infomation
-
-    [Example]
-
-    $zinbei -n notojima.txt
-    $zinbei -m notojima.txt
-    $zinbei -u notojima.txt
-    $zinbei -o notojima.txt
-    $zinbei -z notojima.txt
-
-    -n                 The number line checked end load file.
-
-    -m                 Returned as a character string and the whole is also output.
-
-    -u                 Character string is changed to a capital letter.
-
-    -o                 Character string is changed to lowercase.
-
-    -z                 Text is indicated.
-
-    -r                 rantan shell in zinbei.
-
-    -t                 scom shell in zinbei.
-
-    [rantan is MileStone_version,sme change name.]
-
-    < how to use >
-
-    zinbei -r [ File name ] [ String or regular expression ]
-
-    < Example >
-
-    >zinbei -r notojima.txt wajima
-
-    If it evaluates whether there is any character string of wajima
-    to notojima.txt and is in it, one of them will be outputted!
-
-    < how to use>
-
-    zinbei -t [Filename (read)] [Filename (write)] [change before word] [change after word]
-
-    <Example>
-
-    >zinbei -t notojima.txt Example.txt roman ruby
-
-    Example.txt new_make_file after roman → ruby changed.
-
-    '
-    puts 'COMMAND'.center(60, '-')
+    require 'zinbei/manual'
   end
 
   def soft
-    puts '
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  ))wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww((
- ((                                                                    ))
-  )) ========= ======  ||\\      || ||========   ||=========  ======   ((
- ((      / /     ||    || \\     || ||        )) ||             ||      ))
-  ))    / /      ||    ||  \\    || ||        )) ||             ||     ((
- ((    / /       ||    ||   \\   || ||========   ||=======      ||      ))
-  ))  / /        ||    ||    \\  || ||        )) ||             ||     ((
- ((  / /         ||    ||     \\ || ||        )) ||             ||      ))
-  )) ========= ======  ||      \\|| ||========   ||=========  ======   ((
- ((                                                                    ))
-  ))wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww((
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    '
-    puts 'RubyShell(Zinbei) is Copyright Takayuki Kamiyama,From 2012 to ' + DateTime.now.year.to_s
-    puts ''
+    require 'zinbei/flag'
   end
 
   def str
