@@ -28,13 +28,45 @@ RubyGemsからインストールできるバージョン。
 
 [ News ]
 
-> zinbeiのdオプション、1.5.xからはhimekuriを使います
+```markdown
 
-> gem install himekuri
+1.5.xからはhimekuriを使います
 
-> zinbei -d
+gem install himekuri
 
-[himekuri/rubygems](https://rubygems.org/gems/himekuri)
+zinbei -d
+
+```
+
+[GuuGoo](https://github.com/takkii/guugoo)
+
+```markdown
+
+> Ruby 2.6.5
+
+git clone https://github.com/takkii/zinbei.git
+
+cd zinbei
+
+or
+
+rubygems install ( gem install zinbei )
+
+cd RubyInstaller2展開先(windows)/lib/ruby/gems/2.6.0/gems/zinbei-1.5.1
+
+zinbei -g
+
+or
+
+zinbei -f
+
+※ GuuGooで作成した実行ファイル(.exe)が動作します。
+
+```
+
+RubyGems himekuri downloads page.
+
+[ gem install himekuri ](https://rubygems.org/gems/himekuri)
 
 ＜:ロミ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -114,7 +146,7 @@ Finished in 0.008685 seconds.
 ```text
 zinbeiの現在は、MITライセンスです。
 
-著作者はTakayuki Kamiyamaです。
+著作者は、上山 孝幸です。
 ```
 
 英語

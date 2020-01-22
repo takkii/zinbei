@@ -5,8 +5,7 @@ require 'minitest'
 require 'minitest/autorun'
 require 'minitest/unit'
 require 'minitest/reporters'
-# use Test Case comment out
-# require 'tanraku'
+require 'himekuri'
 
 Encoding.default_internal = 'UTF-8'
 
@@ -44,6 +43,14 @@ module LoadR
   end
 end
 
+puts ''
+puts ' TimeStamp '.center(60, '-').toutf8
+puts ''
+MiniFilename.new.reiwa_print
+puts ''
+MiniFilename.new.himekuri_print
+puts ''
+puts ' TimeStamp '.center(60, '-').toutf8
 puts ''
 puts ' current_directory '.center(60, '-').toutf8
 puts ''
