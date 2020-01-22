@@ -8,7 +8,7 @@ source 'https://rubygems.org'
 ruby '2.6.5'
 
 gem 'debase'
-gem 'himekuri', '0.1.2'
+gem 'himekuri'
 gem 'minitest-reporters'
 gem 'rake'
 gem 'rspec'
