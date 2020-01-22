@@ -15,7 +15,7 @@ module Zinbei
   def version
     require 'zinbei/version'
     print Zinbei::VERSION
-    print ' : [zinbei_mania_version] '
+    puts ' : [zinbei_mania_version] '
   end
 
   def start
