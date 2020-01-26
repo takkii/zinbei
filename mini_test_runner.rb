@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'kconv'
+# warning: $SAFE will become a normal global variable in Ruby 3.0
 require 'minitest'
 require 'minitest/autorun'
 require 'minitest/unit'
@@ -71,6 +72,3 @@ MiniTestOne.new.mini_test
 puts ''
 
 __END__
-
-# vscode debug result output.
-# warning: $SAFE will become a normal global variable in Ruby 3.0
