@@ -71,3 +71,6 @@ MiniTestOne.new.mini_test
 puts ''
 
 __END__
+
+# vscode debug result output.
+# warning: $SAFE will become a normal global variable in Ruby 3.0
