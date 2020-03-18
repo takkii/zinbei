@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 
-require 'kconv'
 require 'test/unit'
 require 'himekuri'
 
+# Encoding Setting.
 Encoding.default_internal = 'UTF-8'
+Encoding.default_external = 'UTF-8'
 
 # Test result loads.
 module Test
@@ -22,36 +23,37 @@ class Filename
   end
 end
 
-# Unit_Test_Run
-class Unit < Filename
+# Super Class
+class One < Filename
   include Test
 
-  def run
+  def two
     for_all
   end
 end
 
+# Ouutput test result.
 puts ''
-puts ' TimeStamp '.center(60, '-').toutf8
+puts ' TimeStamp '.center(60, '-')
 puts ''
-Unit.new.reiwa_print
+Object.new.reiwa_print
 puts ''
-Unit.new.himekuri_print
+Object.new.himekuri_print
 puts ''
-puts ' TimeStamp '.center(60, '-').toutf8
-puts ''
-puts ' ./test in filename list...start! '.center(60, '-').toutf8
-puts ''
-Unit.new.find
-puts ''
-puts ' ./test in filename list...exit. '.center(60, '-').toutf8
+puts ' TimeStamp '.center(60, '-')
 puts ''
 puts ''
-puts ' Test All Start '.center(60, '-').toutf8
+puts '[ ミニテストファイル読み込み ]'
+One.new.find
 puts ''
-Unit.new.run
+puts ' ./test in filename list...exit. '.center(60, '-')
 puts ''
-puts ' Test All End '.center(60, '-').toutf8
+puts ''
+puts ' Test All Start '.center(60, '-')
+puts ''
+One.new.two
+puts ''
+puts ' Test All End '.center(60, '-')
 puts ''
 
 __END__
