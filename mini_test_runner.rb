@@ -12,7 +12,7 @@ Encoding.default_internal = 'UTF-8'
 # Ruby test file.
 class MiniTestOne
   def mini_test
-    Dir[File.join(__dir__, 'mini_test', '*.rb')].each do |file|
+    Dir[File.join(__dir__, 'mini_test', '*.rb')].sort.each do |file|
       require file
     end
   end
