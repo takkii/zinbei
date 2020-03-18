@@ -1,5 +1,0 @@
-# coding: sjis
-
-# frozen_string_literal: true
-
-puts Time.new.strftime("%Y”N%mŒ%d“ú@%H%M•ª%S•b")
