@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'kconv'
 require 'minitest'
 require 'minitest/autorun'
 require 'minitest/unit'
@@ -8,11 +7,12 @@ require 'minitest/reporters'
 require 'himekuri'
 
 Encoding.default_internal = 'UTF-8'
+Encoding.default_external = 'UTF-8'
 
 # Ruby test file.
 class MiniTestOne
   def mini_test
-    Dir[File.join(__dir__, 'mini_test', '*.rb')].each do |file|
+    Dir[File.join(__dir__, 'mini_test', '*.rb')].sort.each do |file|
       require file
     end
   end
@@ -44,27 +44,27 @@ module LoadR
 end
 
 puts ''
-puts ' TimeStamp '.center(60, '-').toutf8
+puts ' TimeStamp '.center(60, '-')
 puts ''
 MiniFilename.new.reiwa_print
 puts ''
 MiniFilename.new.himekuri_print
 puts ''
-puts ' TimeStamp '.center(60, '-').toutf8
+puts ' TimeStamp '.center(60, '-')
 puts ''
-puts ' current_directory '.center(60, '-').toutf8
+puts ' current_directory '.center(60, '-')
 puts ''
 puts Dir.getwd
 puts ''
-puts ' current_directory '.center(60, '-').toutf8
+puts ' current_directory '.center(60, '-')
 puts ''
 puts ''
-puts ' mini_test in filename list...start '.center(60, '-').toutf8
+puts ' mini_test in filename list...start '.center(60, '-')
 puts ''
 using Load
 MiniFilename.new.mini_find
 puts ''
-puts ' mini_test in filename list...exit '.center(60, '-').toutf8
+puts ' mini_test in filename list...exit '.center(60, '-')
 puts ''
 using LoadR
 MiniTestOne.new.mini_test
@@ -72,4 +72,3 @@ puts ''
 
 __END__
 
-# warning: $SAFE will become a normal global variable in Ruby 3.0
