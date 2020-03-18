@@ -142,6 +142,15 @@ Finished in 0.008685 seconds.
 
 ```
 
+### rspec_test
+
+```markdown
+.
+
+Finished in 0.15716 seconds (files took 5.09 seconds to load)
+1 example, 0 failures
+```
+
 日本語
 
 ```text
