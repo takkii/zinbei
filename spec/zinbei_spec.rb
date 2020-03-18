@@ -2,6 +2,9 @@
 
 require 'spec_helper'
 
+Encoding.default_internal = 'UTF-8'
+Encoding.default_external = 'UTF-8'
+
 # RSpec Test Start
 RSpec.describe 'Zinbei' do
   before do
