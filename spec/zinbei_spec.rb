@@ -13,10 +13,8 @@ RSpec.describe 'Zinbei' do
   end
 
   describe 'prop/version' do
-    @ver = '1.5.3'
-    it "まず最初に、'version'を評価します。@verとZinbei::VERSIONを比較します。" do
-      expect(Zinbei::VERSION).equal?(@ver)
-    end
+    subject { Zinbei::VERSION }
+    it { is_expected.to eq('1.5.3') }
   end
 
   context 'himekuri' do
