@@ -28,6 +28,12 @@ RSpec.describe 'Zinbei' do
       it { is_expected.to eq(rei) }
     end
 
+    context 'downcase' do
+      ring = 'DOWNCASE'
+      subject { ring.downcase }
+      it { is_expected.to eq(ring.downcase) }
+    end
+
     after do
       GC.start
     end
