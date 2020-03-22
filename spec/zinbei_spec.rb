@@ -35,6 +35,20 @@ RSpec.describe 'Zinbei RSpec Test' do
       it { is_expected.to eq(rin.downcase) }
     end
 
+    context 'upcase' do
+      upp = 'upcase'
+      upps = 'UpCase'
+      subject { upp.upcase }
+      it { is_expected.to eq(upps.upcase) }
+    end
+
+    context 'String' do
+      sri = 'こんにちは'
+      tng = 'こんにちは'.to_s
+      subject { sri }
+      it { is_expected.to eq(tng) }
+    end
+
     after do
       GC.start
     end
