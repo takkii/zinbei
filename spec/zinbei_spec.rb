@@ -7,13 +7,13 @@ Encoding.default_internal = 'UTF-8'
 Encoding.default_external = 'UTF-8'
 
 # RSpec Test Start
-RSpec.describe 'Zinbei' do
+RSpec.describe 'Zinbei RSpec Test' do
   before do
     require 'zinbei/version'
     require 'himekuri'
   end
 
-  describe 'Zinbei function' do
+  describe 'Zinbei Function' do
     context 'prop/version' do
       str = '1.5.3'
       subject { Zinbei::VERSION }
@@ -30,8 +30,9 @@ RSpec.describe 'Zinbei' do
 
     context 'downcase' do
       ring = 'DOWNCASE'
+      rin = 'DoWnCase'
       subject { ring.downcase }
-      it { is_expected.to eq(ring.downcase) }
+      it { is_expected.to eq(rin.downcase) }
     end
 
     after do
