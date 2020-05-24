@@ -42,6 +42,7 @@ zinbei -d
 [GuuGoo](https://github.com/takkii/guugoo)
 
 ```markdown
+※ Windows固有のzinbei機能
 
 > Ruby 2.6.5
 
