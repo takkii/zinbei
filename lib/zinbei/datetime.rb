@@ -2,7 +2,7 @@
 
 require 'himekuri'
 
-Object.new.himekuri_print
-Object.new.count_print
-Object.new.reiwa_print
-Object.new.version
+HimekuriClass.new.himekuri_print
+HimekuriClass.new.count_print
+HimekuriClass.new.reiwa_print
+HimekuriClass.new.version

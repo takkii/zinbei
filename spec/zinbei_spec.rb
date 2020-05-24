@@ -15,7 +15,7 @@ RSpec.describe 'Zinbei RSpec Test' do
 
   describe 'Zinbei Function' do
     context 'prop/version' do
-      str = '1.5.3'
+      str = '1.5.4'
       subject { Zinbei::VERSION }
       it { is_expected.to eq(str) }
     end
@@ -24,7 +24,7 @@ RSpec.describe 'Zinbei RSpec Test' do
       nen = %w[令和]
       td = Date.today
       rei = (nen[0] + "#{(td.year - 2018)}年" + "#{td.month}月" + "#{td.day}日")
-      subject { Object.new.reiwa }
+      subject { HimekuriClass.new.reiwa }
       it { is_expected.to eq(rei) }
     end
 
