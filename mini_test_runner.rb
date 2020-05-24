@@ -46,9 +46,9 @@ end
 puts ''
 puts ' TimeStamp '.center(60, '-')
 puts ''
-MiniFilename.new.reiwa_print
+HimekuriClass.new.reiwa_print
 puts ''
-MiniFilename.new.himekuri_print
+HimekuriClass.new.himekuri_print
 puts ''
 puts ' TimeStamp '.center(60, '-')
 puts ''
