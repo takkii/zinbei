@@ -1,19 +1,19 @@
 # Zinbei(じんべい)の取扱説明書
 
 ```markdown
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- ))wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww((
-((                                                                    ))
- )) ========= ======  ||\\      || ||========   ||=========  ======  ((
-((      / /     ||    || \\     || ||        )) ||             ||     ))
- ))    / /      ||    ||  \\    || ||        )) ||             ||    ((
-((    / /       ||    ||   \\   || ||========   ||=======      ||     ))
- ))  / /        ||    ||    \\  || ||        )) ||             ||    ((
-((  / /         ||    ||     \\ || ||        )) ||             ||     ))
- )) ========= ======  ||      \\|| ||========   ||=========  ======  ((
-((                                                                    ))
- ))wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww((
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        ))wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww((
+                       ((                                                                    ))
+                        )) ========= ======  ||\\      || ||========   ||=========  ======  ((
+                       ((      / /     ||    || \\     || ||        )) ||             ||     ))
+                        ))    / /      ||    ||  \\    || ||        )) ||             ||    ((
+                       ((    / /       ||    ||   \\   || ||========   ||=======      ||     ))
+                        ))  / /        ||    ||    \\  || ||        )) ||             ||    ((
+                       ((  / /         ||    ||     \\ || ||        )) ||             ||     ))
+                        )) ========= ======  ||      \\|| ||========   ||=========  ======  ((
+                       ((                                                                    ))
+                        ))wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww((
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ```
 
 [![Gem Version](https://badge.fury.io/rb/zinbei.svg)](http://badge.fury.io/rb/zinbei)[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)[![Build Status](https://travis-ci.org/takkii/zinbei.svg?branch=master)](https://travis-ci.org/takkii/zinbei)![GitHub release](https://img.shields.io/github/release/takkii/zinbei.svg?style=flat)[![GitHub Status](https://img.shields.io/github/last-commit/takkii/zinbei.svg?style=flat)](GitHub)
