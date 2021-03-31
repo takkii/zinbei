@@ -710,9 +710,13 @@ week        太陽暦で日付の曜日を真と偽で判定します
 
     elsif line.match?(once[8])
       puts ''
-      puts '日付の曜日をtrue,falseで判定します'
+      puts 'WEEK'.center(60, '-')
+      puts ''
+      puts '入力した日付を曜日で判定します'
       puts '半角数字で入力してください'
       puts 'それでは、スタート！'
+      puts ''
+      puts 'WEEK'.center(60, '-')
       puts ''
 
       begin
