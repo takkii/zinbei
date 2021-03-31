@@ -750,22 +750,31 @@ week        太陽暦で日付の曜日を真と偽で判定します
 
       t = Time.local(nen, mon, days)
 
-      print '日曜日ですか？：'
-      puts  t.sunday?
-      print '月曜日ですか？：'
-      puts t.monday?
-      print '火曜日ですか？：'
-      puts  t.tuesday?
-      print '水曜日ですか？：'
-      puts  t.wednesday?
-      print '木曜日ですか？：'
-      puts  t.thursday?
-      print '金曜日ですか？：'
-      puts  t.friday?
-      print '土曜日ですか？：'
-      puts t.saturday?
-
-      puts
+      if t.sunday?
+        puts "#{nen}年#{mon}月#{days}日は、日曜日です。"
+        puts ''
+      elsif t.monday?
+        puts "#{nen}年#{mon}月#{days}日は、月曜日です。"
+        puts ''
+      elsif t.tuesday?
+        puts "#{nen}年#{mon}月#{days}日は、火曜日です。"
+        puts ''
+      elsif t.wednesday?
+        puts "#{nen}年#{mon}月#{days}日は、水曜日です。"
+        puts ''
+      elsif  t.thursday?
+        puts "#{nen}年#{mon}月#{days}日は、木曜日です。"
+        puts ''
+      elsif t.friday?
+        puts "#{nen}年#{mon}月#{days}日は、金曜日です。"
+        puts ''
+      elsif t.saturday?
+        puts "#{nen}年#{mon}月#{days}日は、土曜日です。"
+        puts ''
+      else
+        puts 'ありえない曜日を指しています...終了します! '
+        exit!
+      end
 
       print '>'
       # The command which can be called is only once.
