@@ -7,7 +7,7 @@ require File.join(File.dirname(__FILE__), '../lib/zinbei/version')
 class TestVersion < Test::Unit::TestCase
   def setup
     @versions = Zinbei::VERSION
-    @version = '1.5.6'
+    @version = '1.5.7'
   end
 
   def test_new
