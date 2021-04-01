@@ -15,7 +15,7 @@ RSpec.describe 'Zinbei RSpec Test' do
 
   describe 'Zinbei Function' do
     context 'prop/version' do
-      str = '1.5.6'
+      str = '1.5.7'
       subject { Zinbei::VERSION }
       it { is_expected.to eq(str) }
     end

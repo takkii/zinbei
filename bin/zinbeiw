@@ -3,7 +3,10 @@
 
 # vim: filetype=ruby
 
+require 'date'
 require 'readline'
+require 'pycall/import'
+include PyCall::Import
 
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
@@ -81,7 +84,7 @@ puts 'まずは、helpと入力してください!コマンドがわかります
 begin
   str = %w(sessi kashi exit help).map!(&:freeze).freeze
 
-  once = %w(find delete remove rename makefolder wordcount NumberGame Encode week).map!(&:freeze).freeze
+  once = %w(find delete remove rename makefolder wordcount NumberGame Encode week calendar).map!(&:freeze).freeze
 
   lucky = %w(loto6 Numbers kuji).map!(&:freeze).freeze
 
@@ -352,6 +355,8 @@ Volt        オームの法則を使い、電圧を調べます
 Rister      オームの法則を使い、抵抗を調べます
 
 week        太陽暦で日付の曜日を真と偽で判定します
+
+calendar    PyCallでpythonからカレンダーを表示します
 
 終了するときは、exitと入力します'
 
@@ -789,7 +794,50 @@ week        太陽暦で日付の曜日を真と偽で判定します
       end
 
       print '> '
+
+      elsif line.match?(once[9])
+      puts ''
+      puts 'WEEK'.center(60, '-')
+      puts ''
+      puts '入力した日付をカレンダーで表示します'
+      puts '半角数字で入力してください'
+      puts 'それでは、スタート！'
+      puts ''
+      puts 'WEEK'.center(60, '-')
+      puts ''
+
+      begin
+        puts '調べたい年を入力してください'
+        print '> '
+        nen = gets.chomp.to_i
+      rescue StandardError => ee
+        p ee
+        puts 'エラーです。数字を確認してください！'
+      end
+
+      puts ''
+
+      begin
+        puts '調べたい月を入力してください'
+        print '> '
+        mon = gets.chomp.to_i
+      rescue StandardError => ey
+        p ey
+        puts 'エラーです。数字を確認してください！'
+      end
+
+      puts ''
+
+
+      t = Time.local(nen, mon)
+
+      pyimport :calendar
+      puts (calendar.month(nen,mon))
+
+      puts ''
+
       # The command which can be called is only once.
+      print '> '
 
     else
       puts "Can't Enter this Words. Please input help"
