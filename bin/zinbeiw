@@ -33,7 +33,7 @@ class Emerald
       print ' '
     end
     puts ''
-    end
+  end
 
   def fizzbizz
     puts 'FizzBizz問題の出力結果です!'
@@ -51,7 +51,7 @@ class Emerald
       print ' '
     end
     puts ''
-    end
+  end
 
   def kurage
     a = rand(15)
@@ -61,7 +61,7 @@ class Emerald
     end
     puts '＜コ：彡'
     puts ''
- end
+  end
 end
 
 saikoro = Random.rand(4)
