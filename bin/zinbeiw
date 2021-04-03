@@ -4,6 +4,7 @@
 # vim: filetype=ruby
 
 require 'date'
+require 'open3'
 require 'readline'
 require 'pycall/import'
 include PyCall::Import
@@ -88,7 +89,7 @@ begin
 
   lucky = %w(loto6 Numbers kuji).map!(&:freeze).freeze
 
-  dark = %w(OneRunner Eval).map!(&:freeze).freeze
+  dark = %w(OneRunner Eval output).map!(&:freeze).freeze
 
   denki = %w(Anpea Volt Rister).map!(&:freeze).freeze
 
@@ -357,6 +358,8 @@ Rister      オームの法則を使い、抵抗を調べます
 week        太陽暦で日付の曜日を真と偽で判定します
 
 calendar    PyCallでpythonからカレンダーを表示します
+
+output      外部コマンドを実行できます
 
 終了するときは、exitと入力します'
 
@@ -709,6 +712,32 @@ calendar    PyCallでpythonからカレンダーを表示します
         re = gets.chomp
         puts ''
         p eval(re)
+        puts ''
+      rescue StandardError => et
+        p et
+        print '> '
+        puts 'エラーです。文字列を確認してください！'
+        puts ''
+        retry
+      ensure
+        puts '終了は exit を入力してください！'
+      end
+      print '> '
+
+      elsif line.match?(dark[2])
+      begin
+        puts ''
+        puts 'OUTPUT'.center(60, '-')
+        puts ''
+        puts '外部コマンドを実行できます!'
+        puts ''
+        puts 'OUTPUT'.center(60, '-')
+        puts ''
+        print '> '
+        re = gets.chomp
+        puts ''
+        stdout, stderr, status = Open3.capture3(re)
+        puts stdout
         puts ''
       rescue StandardError => et
         p et
