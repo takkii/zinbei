@@ -7,6 +7,6 @@ require_relative File.join(File.dirname(__FILE__), '../lib/zinbei/version.rb')
 # Mini_test file load.
 class TestVersion < Minitest::Test
   def test_version
-    assert_equal Zinbei::VERSION, '1.5.7'
+    assert_equal Zinbei::VERSION, '1.5.8'
   end
 end
