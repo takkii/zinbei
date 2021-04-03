@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Zinbei
-  VERSION = '1.5.7'
+  VERSION = '1.5.8'
 end
 
 # zinbei version change log
