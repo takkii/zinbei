@@ -5,12 +5,12 @@ require 'zinbei/version'
 
 Gem::Specification.new do |s|
   s.name = "zinbei"
-  s.version = zinbei::VERSION
+  s.version = Zinbei::VERSION
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["takkii"]
   s.email = "karuma.reason@gmail.com"
-  s.executables = %w(zinbei zinbeic zinbeiw)
+  s.executables = %w(zinbei zinbeie zinbeiw)
   s.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   s.homepage = "https://github.com/takkii/zinbei"
   s.metadata = { "github_repo" => "ssh://github.com/takkii/zinbei" }
