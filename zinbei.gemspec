@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.metadata = { "github_repo" => "ssh://github.com/takkii/zinbei" }
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "3.0.3"
+  s.rubygems_version = "3.5.7"
   s.summary = "It is the work which saw the zinbeizame in notojima aquarium, and was made from the impression.
  "
   s.description = "zinbei is rubyshell(zinbei,zinbeiw,zinbeie), It's evolution every day."
