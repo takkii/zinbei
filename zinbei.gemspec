@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.required_ruby_version = ['>= 3.0']
-  s.rubygems_version = "3.5.7"
+  s.rubygems_version = ['>= 3.5']
   s.summary = "It is the work which saw the zinbeizame in notojima aquarium, and was made from the impression.
  "
   s.description = "zinbei is rubyshell(zinbei,zinbeiw,zinbeie), It's evolution every day."
