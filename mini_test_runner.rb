@@ -25,6 +25,7 @@ class MiniTestFile
 end
 
 begin
+  SimpleCov.start
   MiniTestFile.new.remove
 rescue LoadError => e
   puts e.backtrace.tanraku_exit
