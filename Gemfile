@@ -11,6 +11,7 @@ gem 'minitest'
 #gem 'ruby-prof'
 #gem 'sanitize'
 gem 'test-unit'
+gem 'simplecov'
 
 # GitHub Package.
 # source "https://rubygems.pkg.github.com/takkii" do
