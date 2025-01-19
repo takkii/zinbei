@@ -4,7 +4,6 @@
 
 <div align="center">
   <p>Author Takayuki Kamiyama.</p>
-  <p>zinbei just version is MIT license.</p>
 </div>
 
 <br />
