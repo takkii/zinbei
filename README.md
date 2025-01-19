@@ -3,6 +3,8 @@
 <br />
 
 <div align="center">
+  <p>I went to Notojima Aquarium, </p>
+   <p>saw the whale sharks and was so impressed by their size that I decided to make this.</p>
   <p>Author Takayuki Kamiyama.</p>
 </div>
 
