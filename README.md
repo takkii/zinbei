@@ -9,10 +9,4 @@
 
 <br />
 
-<div align="center">
- <b> Please readme, See the <a href=https://github.com/takkii/zinbei/wiki/manual>wiki </a> for how to use zinbei. </b>
-</div>
-
-<br />
-
 
