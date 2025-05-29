@@ -1,4 +1,5 @@
-puts '
+puts <<~EOS.chomp
+
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   ))wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww((
  ((                                                                    ))
@@ -12,6 +13,8 @@ puts '
  ((                                                                    ))
   ))wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww((
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    '
-puts 'RubyShell(Zinbei) is Copyright Takayuki Kamiyama,From 2012 to ' + DateTime.now.year.to_s
+
+EOS
+
+puts 'Zinbei is Copyright Takayuki Kamiyama, From 2012 to ' + DateTime.now.year.to_s
 puts ''

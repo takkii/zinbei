@@ -376,11 +376,11 @@ rss         RSS投稿時間帯を判別します
 
       # It is a help document of zinbeic exit!
 
-      # The command which can be called is only once. 　
+      # The command which can be called is only once.
     elsif line.match?(once[0])
 
       begin
-        print '探したい文字列を入力してください：　'
+        print '探したい文字列を入力してください： '
         re = gets.chomp
       rescue StandardError => et
         p et
@@ -389,7 +389,7 @@ rss         RSS投稿時間帯を判別します
       end
 
       begin
-        print '探したいフォルダのパスを指定してください：　'
+        print '探したいフォルダのパスを指定してください： '
         fo = gets.chomp
       rescue StandardError => es
         p es
@@ -403,7 +403,7 @@ rss         RSS投稿時間帯を判別します
       end
 
       begin
-        print 'ファイル名を拡張子を含んで入力してください：　'
+        print 'ファイル名を拡張子を含んで入力してください： '
 
         filename = gets.chomp
         File.open(filename) do |d|
@@ -430,7 +430,7 @@ rss         RSS投稿時間帯を判別します
     elsif line.match?(once[1])
 
       begin
-        print '消したいフォルダのパスを指定してください：　'
+        print '消したいフォルダのパスを指定してください： '
         mo = gets.chomp
       rescue StandardError => es
         p es
@@ -444,7 +444,7 @@ rss         RSS投稿時間帯を判別します
       end
 
       begin
-        print 'ファイル名を拡張子を含んで入力してください：　'
+        print 'ファイル名を拡張子を含んで入力してください： '
 
         del = readline.chomp!
         File.delete(del)
@@ -462,7 +462,7 @@ rss         RSS投稿時間帯を判別します
     elsif line.match?(once[2])
 
       begin
-        print '削除したいフォルダのパスを指定してください：　'
+        print '削除したいフォルダのパスを指定してください： '
         st = gets.chomp
       rescue StandardError => es
         p es
@@ -476,7 +476,7 @@ rss         RSS投稿時間帯を判別します
       end
 
       begin
-        print '削除したいフォルダ名を拡張子を含んで入力してください：　'
+        print '削除したいフォルダ名を拡張子を含んで入力してください： '
 
         rem = readline.chomp!
         Dir.rmdir(rem)
@@ -493,7 +493,7 @@ rss         RSS投稿時間帯を判別します
     elsif line.match?(once[3])
 
       begin
-        print '名前を変えたいフォルダのパスを指定してください：　'
+        print '名前を変えたいフォルダのパスを指定してください： '
         nem = gets.chomp
       rescue StandardError => es
         p es
@@ -507,7 +507,7 @@ rss         RSS投稿時間帯を判別します
       end
 
       begin
-        print '現在のファイル名を拡張子を含んで入力してください：　'
+        print '現在のファイル名を拡張子を含んで入力してください： '
         re = gets.chomp!
       rescue StandardError => ex
         p ex
@@ -516,7 +516,7 @@ rss         RSS投稿時間帯を判別します
       end
 
       begin
-        print '変更するファイル名を拡張子を含んで入力してください：　'
+        print '変更するファイル名を拡張子を含んで入力してください： '
 
         no = gets.chomp!
 
@@ -535,7 +535,7 @@ rss         RSS投稿時間帯を判別します
     elsif line.match?(once[4])
 
       begin
-        print '作成したいフォルダのパスを指定してください：　'
+        print '作成したいフォルダのパスを指定してください： '
         mk = gets.chomp
       rescue StandardError => es
         p es
@@ -549,7 +549,7 @@ rss         RSS投稿時間帯を判別します
       end
 
       begin
-        print 'フォルダ名を入力してください：　'
+        print 'フォルダ名を入力してください： '
 
         ma = readline.chomp!
         Dir.mkdir(ma)
@@ -567,7 +567,7 @@ rss         RSS投稿時間帯を判別します
     elsif line.match?(once[5])
 
       begin
-        print '探したいフォルダのパスを指定してください：　'
+        print '探したいフォルダのパスを指定してください： '
         mik = gets.chomp
       rescue StandardError => es
         p es
@@ -581,7 +581,7 @@ rss         RSS投稿時間帯を判別します
       end
 
       begin
-        print '数えたいファイル名を拡張子を含んで入力してください：　'
+        print '数えたいファイル名を拡張子を含んで入力してください： '
 
         count = Hash.new(0)
 
@@ -685,14 +685,14 @@ rss         RSS投稿時間帯を判別します
 
         puts ''
         puts '変更前のエンコードを指定してください'
-        puts 'ISO-2022-JP,SJIS,eucJP,UTF-8　が候補です。'
+        puts 'ISO-2022-JP,SJIS,eucJP,UTF-8 が候補です。'
         print '> '
         befenco = gets.chomp
 
         begin
           puts ''
           puts 'エンコードを指定してください'
-          puts 'ISO-2022-JP,SJIS,eucJP,UTF-8　が候補です。'
+          puts 'ISO-2022-JP,SJIS,eucJP,UTF-8 が候補です。'
           print '> '
           aftenco = gets.chomp
           puts

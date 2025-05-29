@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'minitest/autorun'
 require 'minitest/unit'
 require File.join(File.dirname(__FILE__), '../lib/zinbei/version')
@@ -8,7 +6,10 @@ require File.join(File.dirname(__FILE__), '../lib/zinbei/version')
 class TestVersion < Minitest::Test
   def setup
     @versions = Zinbei::VERSION
-    @version = '2.0.0'
+    zinbei_version = '4.0.0'
+    t = Date.today
+    build_day = t.strftime('%Y.%m.%d')
+    @version = "#{zinbei_version}-#{build_day}".freeze
   end
 
   def test_new

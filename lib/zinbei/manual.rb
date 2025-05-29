@@ -1,15 +1,16 @@
 puts 'COMMAND'.center(60, '-')
 
-    puts '
+    puts <<~EOS.chomp
+
     [Zinbei]
 
-    -s,start           Start Pages.
+    -s, start          Start Pages.
 
-    -v,version         Version Infomation
+    -v, version        Version Infomation.
 
-    -d,datetime        What time is it?
+    -d, datetime       What time is it?
 
-    -l,license         License Infomation
+    -l, license        License Infomation.
 
     [Example]
 
@@ -58,7 +59,7 @@ puts 'COMMAND'.center(60, '-')
 
     [Zinbeie]
 
-    zinbeijett engine(1.2.1) clone.
+    zinbeijett engine v1.2.1 clone.
 
     [nyasocom_oss]
 
@@ -67,7 +68,10 @@ puts 'COMMAND'.center(60, '-')
     <Example>
     zinbei new nyasocom_frame
 
-    nyasocom_frame heat (1.0.2) clone.
+    nyasocom_frame / heat v1.0.2 clone.
 
-    '
+    EOS
+
 puts 'COMMAND'.center(60, '-')
+
+__END__
