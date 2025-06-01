@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-source 'https://rubygems.org'
-
 # Specify your gem's dependencies in zinbei.gemspec
-# gem 'Your Project dependent rubygems.'
+source "https://rubygems.pkg.github.com/takkii" do
+  gem "himekuri", "0.2.4.pre.2025.05.29"
+end
