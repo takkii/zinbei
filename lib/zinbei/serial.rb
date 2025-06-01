@@ -1,4 +1,3 @@
 require 'zinbei/version'
 
-print Zinbei::VERSION
-puts ' : [zinbei_enthusiast] '
+puts (Zinbei::VERSION).to_s + ' : [zinbei_derivative_version] '

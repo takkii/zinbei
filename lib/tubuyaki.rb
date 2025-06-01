@@ -11,7 +11,7 @@ resizable [0,0]
 window1 = TkToplevel.new{
 title 'ぼやきったー！'
 }
-    
+
 TkLabel.new(nil,
 :text => "ひとりごと、メモ、伝言に最適！",
 :fg => "green").pack

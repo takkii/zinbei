@@ -1,11 +1,13 @@
+# frozen_string_literal: false
+
 require 'minitest'
 require 'minitest/autorun'
 require 'minitest/benchmark'
 
 class MiniTestBenchMark < Minitest::Benchmark
     def setup
-      @date = Time.new.strftime('%Y年%m月%d日　%H時%M分%S秒')
-      @dates = Time.now.strftime('%Y年%m月%d日　%H時%M分%S秒')
+      @date = Time.new.strftime('%Y年%m月%d日 %H時%M分%S秒')
+      @dates = Time.now.strftime('%Y年%m月%d日 %H時%M分%S秒')
 
       @str = '日本語文字列を確認'
       @utf8_str = @str.encode('UTF-8')

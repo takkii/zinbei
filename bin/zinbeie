@@ -1,14 +1,15 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
+
 # vim: filetype=ruby
 
 require 'timeout'
+require 'bmi'
 
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-Encoding.default_internal = 'UTF-8'
-Encoding.default_external = 'UTF-8'
+encoding_style
 
 # zinbeijett function
 module EngineLeft
@@ -43,7 +44,7 @@ module EngineLeft
     require 'druby_erb'
     Druby.new.main
   end
-  
+
   def druby_server
     require 'druby_reci'
   end
@@ -101,12 +102,12 @@ module EngineLeft
   end
 
   def summa_xml
-      require 'summa.rb'
-      puts ' Summary Start '.center(60, '-')
-      Feed.new.jira
-      puts ' Summary end '.center(60, '-')
+    require 'summa.rb'
+    puts ' Summary Start '.center(60, '-')
+    Feed.new.jira
+    puts ' Summary end '.center(60, '-')
   end
-  
+
   def version_info
     # merge zinbeijett engine lock
     engine_version = '1.2.1'.freeze
@@ -116,42 +117,42 @@ module EngineLeft
     puts ''
     puts '[ version ]'.center(60, '-')
   end
-  
+
   def rice_keitaiso
     require 'rice'
   end
-  
+
   def suihan_wakati
     require 'suihan'
   end
-  
+
   def kome_wakati
     require 'kome'
   end
-  
+
   def tubuyaki_jett
     require 'tubuyaki'
   end
-  
+
   def tubuyaki_log
     require 'tubuyaki_memo'
   end
-  
+
   def match_log
     require 'all_log'
     Mat.search
     puts ''
   end
-  
+
   def decript_snowcat
     require 'decript'
     String_encrypt.new.use_case_hash
   end
-  
+
   def tweet_cmd
     require 'tweet_cmd'
   end
-  
+
   def saikoro_py
     require 'saikoro'
     Dice.new.saiko
@@ -190,70 +191,73 @@ y = /\A[-][y]\z/
 z = /\A[-][z]\z/
 
 begin
-if one.nil?
-  druby_server
-elsif one.match?(a)
-  search_txi
-elsif one.match?(b)
-  summa_xml
-elsif one.match?(c)
-  calendar_view
-elsif one.match?(d)
-  search_druby_erb
-elsif one.match?(e)
-  tubuyaki_jett
-elsif one.match?(f)
-  auto_view
-elsif one.match?(g)
-  search_gc
-elsif one.match?(h)
-  hyaku_view
-elsif one.match?(i)
-  tubuyaki_log
-elsif one.match?(j)
-  feed_xml
-elsif one.match?(k)
-  match_log
-elsif one.match?(l)
-  saikoro_py
-elsif one.match?(m)
-  search_mail
-elsif one.match?(n)
-  search_txe
-elsif one.match?(o)
-  search_txs
-elsif one.match?(p)
-  mini_view
-elsif one.match?(q)
-  decript_snowcat
-elsif one.match?(r)
-  title_rss
-elsif one.match?(s)
-  count_search
-elsif one.match?(t)
-  match_view
-elsif one.match?(u)
-  tweet_cmd
-elsif one.match?(v)
-  version_info
-elsif one.match?(w)
-  rice_keitaiso
-elsif one.match?(x)
-  kome_wakati
-elsif one.match?(y)
-  suihan_wakati
-elsif one.match?(z)
-  search_txt
-end
+  if one.nil?
+    druby_server
+  elsif one.match?(a)
+    search_txi
+  elsif one.match?(b)
+    summa_xml
+  elsif one.match?(c)
+    calendar_view
+  elsif one.match?(d)
+    search_druby_erb
+  elsif one.match?(e)
+    tubuyaki_jett
+  elsif one.match?(f)
+    auto_view
+  elsif one.match?(g)
+    search_gc
+  elsif one.match?(h)
+    hyaku_view
+  elsif one.match?(i)
+    tubuyaki_log
+  elsif one.match?(j)
+    feed_xml
+  elsif one.match?(k)
+    match_log
+  elsif one.match?(l)
+    saikoro_py
+  elsif one.match?(m)
+    search_mail
+  elsif one.match?(n)
+    search_txe
+  elsif one.match?(o)
+    search_txs
+  elsif one.match?(p)
+    mini_view
+  elsif one.match?(q)
+    decript_snowcat
+  elsif one.match?(r)
+    title_rss
+  elsif one.match?(s)
+    count_search
+  elsif one.match?(t)
+    match_view
+  elsif one.match?(u)
+    tweet_cmd
+  elsif one.match?(v)
+    version_info
+  elsif one.match?(w)
+    rice_keitaiso
+  elsif one.match?(x)
+    kome_wakati
+  elsif one.match?(y)
+    suihan_wakati
+  elsif one.match?(z)
+    search_txt
+  end
 rescue Exception => e
-	#puts e.backtrace
+	# puts e.backtrace
+ensure
+  GC.compact
 end
 
 begin
-require 'druby_reci'
+  require 'druby_reci'
 rescue Exception => e
+  # puts e.backtrace
+ensure
+  GC.compact
 end
-
-GC.start
 
 __END__
