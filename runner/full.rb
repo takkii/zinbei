@@ -12,7 +12,7 @@ class MiniTestFile
     case host_os
     when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
       begin
-        # Full, true || false
+        # Full, Switch ON / (true, string, string).
         @mini_test = Full(true, "#{Dir.home}".to_s, '/GitLab/zinbei/mini_test')
         @mini_unit = Full(true, "#{Dir.home}".to_s, '/GitLab/zinbei/mini_unit')
       rescue StandardError => e
@@ -22,7 +22,7 @@ class MiniTestFile
       # Don't have Macintosh PC.
     when /linux/
       begin
-        # FullW, true || false
+        # FullW, Switch ON / (true, string, string).
         @mini_test = FullW(true, '/mnt/c/Users/sudok', '/GitLab/zinbei/mini_test')
         @mini_unit = FullW(true, '/mnt/c/Users/sudok', '/GitLab/zinbei/mini_unit')
       rescue StandardError => e
