@@ -15,8 +15,8 @@ class MiniTestFile
         # Mini, Switch ON / (true, string).
         @mini_test = Mini(true, '/GitLab/zinbei/mini_test')
         @mini_unit = Mini(true, '/GitLab/zinbei/mini_unit')
-      rescue StandardError => e
-        puts e.backtrace
+      rescue
+        tanraku_execute
       end
     when /darwin|mac os/
       # Don't have Macintosh PC.
@@ -25,15 +25,15 @@ class MiniTestFile
         # MiniW, Switch ON / (true, string, string).
         @mini_test = MiniW(true, '/mnt/c/Users/sudok', '/GitLab/zinbei/mini_test')
         @mini_unit = MiniW(true, '/mnt/c/Users/sudok', '/GitLab/zinbei/mini_unit')
-      rescue StandardError => e
-        puts e.backtrace
+      rescue
+        tanraku_execute
       end
     else
       begin
         raise
-      rescue StandardError => e
-        puts e.backtrace
+      rescue
         puts 'Env, UNIX and Windows only. Other OS is Exception.'
+        tanraku_execute
       end
     end
   end
@@ -44,13 +44,12 @@ class MiniTestFile
   end
 end
 
-# About Exception, begin ~ rescue ~ ensure.
+# Coverage, Start 'SimpleCov.start' add.
 begin
-  # SimpleCov.start
   MiniTestFile.new.remove
-rescue StandardError => e
+rescue
   puts 'Tanraku_VERSION: '.to_s + Tanraku::VERSION
-  puts e.backtrace.tanraku_exit
+  tanraku_execute
 ensure
   GC.compact
 end
