@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'zinbei/version'
+require 'zinbei/gem_version'
 
 Gem::Specification.new do |s|
   s.name = "zinbei"
@@ -18,20 +19,20 @@ Gem::Specification.new do |s|
   s.metadata = { "github_repo" => "ssh://github.com/takkii/zinbei" }
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.required_ruby_version = ['>= 3.0']
-  s.required_rubygems_version = '~> 3.6.9'
+  s.required_ruby_version = [">= 3.0"]
+  s.required_rubygems_version = RbGemversion::VERSION
   s.summary = "It is the work which saw the zinbeizame in notojima aquarium,
    and was made from the impression."
   s.description = "Zinbei is a shell, There are three types of executable files."
 
   # dependent library
-  s.add_runtime_dependency('rake', '~> 13.2')
-  s.add_runtime_dependency('minitest', '~> 5.25')
-  s.add_runtime_dependency('pycall', '~> 1.5') unless Gem.win_platform?
-  s.add_runtime_dependency('rinku', '~> 2.0') unless Gem.win_platform?
-  s.add_runtime_dependency('sanitize', '~> 6.1')
-  s.add_runtime_dependency('test-unit', '~> 3.6')
-  s.add_runtime_dependency('simplecov', '~> 0.22')
+  s.add_runtime_dependency("rake", "~> 13.2")
+  s.add_runtime_dependency("minitest", "~> 5.25")
+  s.add_runtime_dependency("pycall", "~> 1.5") unless Gem.win_platform?
+  s.add_runtime_dependency("rinku", "~> 2.0") unless Gem.win_platform?
+  s.add_runtime_dependency("sanitize", "~> 6.1")
+  s.add_runtime_dependency("test-unit", "~> 3.6")
+  s.add_runtime_dependency("simplecov", "~> 0.22")
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
