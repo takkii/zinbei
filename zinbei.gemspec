@@ -9,9 +9,7 @@ require 'zinbei/gem_version'
 Gem::Specification.new do |s|
   s.name = "zinbei"
   s.version = Zinbei::VERSION
-
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["takkii"]
+  s.authors = ["Takayuki Kamiyama"]
   s.email = "karuma.reason@gmail.com"
   s.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(mini_test|mini_unit)/}) }
   s.executables = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
@@ -20,7 +18,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.required_ruby_version = [">= 3.0"]
-  s.required_rubygems_version = RbGemversion::VERSION
+  s.required_rubygems_version = '~> 3.6.9' if s.respond_to? RbGemversion::VERSION
   s.summary = "It is the work which saw the zinbeizame in notojima aquarium,
    and was made from the impression."
   s.description = "Zinbei is a shell, There are three types of executable files."
